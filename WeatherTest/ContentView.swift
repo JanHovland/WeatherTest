@@ -6,14 +6,45 @@
 //
 
 import SwiftUI
+import CoreLocation
+import WeatherKit
 
+// @available(macOS 13.0, *)
 struct ContentView: View {
+    
+    var location: CLLocation =
+    CLLocation(latitude: .init(floatLiteral: 37.322998),
+               longitude: .init( floatLiteral: -122.032181)
+    )
+    
+    @State var weather: Weather?
+    
+    func getWeather() async {
+        do {
+            weather = try await Task.detached(priority: .userInitiated) {
+                return try await WeatherService.shared
+                    .weather(for: location)
+            } .value
+        } catch {
+            print("\(error)")
+        }
+    }
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        NavigationView {
+            Group {
+                if let weather = weather {
+                    Text("Temperature = \(weather.currentWeather.temperature.description)")
+                    Text("Date = \(weather.currentWeather.date.description)")
+                    Text("Humidity = \(weather.currentWeather.humidity.description)")
+                } else {
+                    ProgressView()
+                        .task {
+                            await getWeather()
+                        }
+                }
+            }
+            .navigationTitle("Cupertino")
         }
     }
 }
