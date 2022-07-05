@@ -11,8 +11,8 @@
 		DBD088912869C85100C31CD0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBD088902869C85100C31CD0 /* ContentView.swift */; };
 		DBD088932869C85200C31CD0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DBD088922869C85200C31CD0 /* Assets.xcassets */; };
 		DBD088972869C85200C31CD0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DBD088962869C85200C31CD0 /* Preview Assets.xcassets */; };
+		DBD6A5EF2873365800EE4C08 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DBD6A5F12873365800EE4C08 /* InfoPlist.strings */; };
 		DBEEF607286A06A200EA1BF0 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = DBEEF605286A06A200EA1BF0 /* Localizable.strings */; };
-		DBFD775D286A03FB007BA35D /* WeatherTest-InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DBFD775B286A03FB007BA35D /* WeatherTest-InfoPlist.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,8 +22,9 @@
 		DBD088922869C85200C31CD0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DBD088942869C85200C31CD0 /* WeatherTest.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = WeatherTest.entitlements; sourceTree = "<group>"; };
 		DBD088962869C85200C31CD0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		DBD6A5F02873365800EE4C08 /* nb */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nb; path = nb.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		DBD6A5F22873369000EE4C08 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		DBEEF606286A06A200EA1BF0 /* nb */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nb; path = nb.lproj/Localizable.strings; sourceTree = "<group>"; };
-		DBFD775C286A03FB007BA35D /* nb */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nb; path = "nb.lproj/WeatherTest-InfoPlist.strings"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,8 +41,8 @@
 		DBD088822869C85100C31CD0 = {
 			isa = PBXGroup;
 			children = (
+				DBD6A5F12873365800EE4C08 /* InfoPlist.strings */,
 				DBEEF605286A06A200EA1BF0 /* Localizable.strings */,
-				DBFD775B286A03FB007BA35D /* WeatherTest-InfoPlist.strings */,
 				DBD0888D2869C85100C31CD0 /* WeatherTest */,
 				DBD0888C2869C85100C31CD0 /* Products */,
 			);
@@ -135,9 +136,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				DBD088972869C85200C31CD0 /* Preview Assets.xcassets in Resources */,
+				DBD6A5EF2873365800EE4C08 /* InfoPlist.strings in Resources */,
 				DBEEF607286A06A200EA1BF0 /* Localizable.strings in Resources */,
 				DBD088932869C85200C31CD0 /* Assets.xcassets in Resources */,
-				DBFD775D286A03FB007BA35D /* WeatherTest-InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -156,21 +157,21 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		DBD6A5F12873365800EE4C08 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DBD6A5F02873365800EE4C08 /* nb */,
+				DBD6A5F22873369000EE4C08 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
 		DBEEF605286A06A200EA1BF0 /* Localizable.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
 				DBEEF606286A06A200EA1BF0 /* nb */,
 			);
 			name = Localizable.strings;
-			path = WeatherTest;
-			sourceTree = "<group>";
-		};
-		DBFD775B286A03FB007BA35D /* WeatherTest-InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				DBFD775C286A03FB007BA35D /* nb */,
-			);
-			name = "WeatherTest-InfoPlist.strings";
 			path = WeatherTest;
 			sourceTree = "<group>";
 		};

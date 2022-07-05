@@ -34,7 +34,7 @@ struct ContentView: View {
         NavigationView {
             Group {
                 if let weather = weather {
-                    Text("Temperature = \(weather.currentWeather.temperature.description)")
+                    Text("isDaylight = \(weather.currentWeather.isDaylight.description)")    // .temperature.description)")
                     Text("Date = \(weather.currentWeather.date.description)")
                     Text("Humidity = \(weather.currentWeather.humidity.description)")
                 } else {

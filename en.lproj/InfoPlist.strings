@@ -1,0 +1,15 @@
+/* 
+  InfoPlist.strings
+  WeatherTest
+
+  Created by Jan Hovland on 04/07/2022.
+ 
+  1) Opprett InfoPlist som "Strings File"
+  2) Legg inn: "CFBundleName" = "xxxxxxxxxx";
+  3) Åpne det ytterste høyre vinduet og gå til Localization og merk av alle.
+  4) Du må kanskje avslutte Xcode og starte på nytt. Da vil det være flere filer under InfoPlist.
+  5) Legg inn aktuelle navn.
+  
+*/
+
+"CFBundleName" = "WeatherTest";

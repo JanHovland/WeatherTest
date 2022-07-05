@@ -1,0 +1,10 @@
+/* InfoPlist.strings
+  WeatherTest
+
+  Created by Jan Hovland on 04/07/2022. */
+
+"CFBundleName" = "Test av vær";     // Kort navn for Appen
+// På iPhone og iPad vil dette ligge som navn på Hjem skjermen.
+
+// "CFBundleDisplayName" = "VærTest Langt Navn";  // Langt navn for Appen som overstyrer CFBundleName
+

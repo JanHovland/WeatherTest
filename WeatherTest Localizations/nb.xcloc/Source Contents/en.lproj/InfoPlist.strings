@@ -1,0 +1,9 @@
+/* 
+  InfoPlist.strings
+  WeatherTest
+
+  Created by Jan Hovland on 04/07/2022.
+  
+*/
+
+"CFBundleName" = "WeatherTest";
