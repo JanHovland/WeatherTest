@@ -5,6 +5,12 @@
 //  Created by Jan Hovland on 27/06/2022.
 //
 
+/// https://github.com/AsyncSwift/AsyncLocationKit?ref=iosexample.com
+///
+///
+/// https://www.youtube.com/watch?v=PAPgcSpSpcs
+
+
 import SwiftUI
 import CoreLocation
 import WeatherKit
@@ -30,12 +36,11 @@ struct ContentView: View {
         }
     }
     
+  
     var body: some View {
         NavigationView {
             Group {
                 if let weather = weather {
-                    Text("isDaylight = \(weather.currentWeather.isDaylight.description)")    // .temperature.description)")
-                    Text("Date = \(weather.currentWeather.date.description)")
                     Text("Humidity = \(weather.currentWeather.humidity.description)")
                 } else {
                     ProgressView()
@@ -47,6 +52,7 @@ struct ContentView: View {
             .navigationTitle("Cupertino")
         }
     }
+    
 }
 
 struct ContentView_Previews: PreviewProvider {
